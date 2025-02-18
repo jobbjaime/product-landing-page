@@ -1,3 +1,4 @@
+/* CSS Reset */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -16,41 +17,169 @@ a {
   color: inherit;
 }
 
+/* Imágenes responsivas */
 img {
     max-width: 100%;
     height: auto;
     display: block;
 }
 
-body {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-header nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 20px;
-}
-
-header > nav > ul {
-  display: flex;
-  gap: 20px;
-}
-
-/*Busqueda por id*/
-#hero {
+/* Variables CSS para colores y tipografía */
+:root {
+    --primary-font: 'Verdana', 'Geneva', 'Tahoma', sans-serif;
+    --font-size-base: 16px;
+    --line-height-base: 1.6;
+    --max-width: 1200px;
+  
+    /* Colores para modo claro */
+    --bg-color-light: #ffffff;
+    --text-color-light: #333333;
+    --primary-color-light: #007bff;
+    --secondary-color-light: #6c757d;
+  
+    /* Colores para modo oscuro */
+    --bg-color-dark: #121212;
+    --text-color-dark: #e0e0e0;
+    --primary-color-dark: #1e90ff;
+    --secondary-color-dark: #a8a8a8;
+  }
+  
+  /* Aplicar modo oscuro si el sistema lo prefiere */
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg-color: var(--bg-color-dark);
+      --text-color: var(--text-color-dark);
+      --primary-color: var(--primary-color-dark);
+      --secondary-color: var(--secondary-color-dark);
+    }
+  }
+  
+  /* Estilos base */
+  body {
+    font-family: var(--primary-font);
+    font-size: var(--font-size-base);
+    line-height: var(--line-height-base);
+    color: var(--text-color);
+    background-color: var(--bg-color);
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  /* Contenedor principal */
+  .container {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  /* Header */
+  header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+  }
+  
+  header nav ul {
+    display: flex;
+    gap: 20px;
+  }
+  
+  header nav a {
+    color: var(--primary-color);
+    transition: color 0.3s ease;
+  }
+  
+  header nav a:hover {
+    color: var(--secondary-color);
+  }
+  
+  /* Sección Hero */
+  #hero {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 30px;
-}
-
-#hero h1 {
-    font-size: 32px;
-}
-
-#hero img {
+    padding: 60px 0;
     text-align: center;
-}
+  }
+  
+  #hero h1 {
+    font-size: 32px;
+    color: var(--primary-color);
+  }
+  
+  #hero p {
+    max-width: 600px;
+    color: var(--text-color);
+  }
+  
+  #hero img {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Secciones */
+  section {
+    padding: 40px 0;
+  }
+  
+  section h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: var(--primary-color);
+  }
+  
+  section ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  section li {
+    background-color: var(--bg-color);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  section li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Footer */
+  footer {
+    padding: 40px 0;
+    text-align: center;
+    background-color: var(--primary-color);
+    color: var(--bg-color);
+  }
+  
+  footer a {
+    color: var(--bg-color);
+    transition: opacity 0.3s ease;
+  }
+  
+  footer a:hover {
+    opacity: 0.8;
+  }
+  
+  /* Botón de modo oscuro/claro */
+  #theme-toggle {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    color: var(--bg-color);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  #theme-toggle:hover {
+    background-color: var(--secondary-color);
+  }

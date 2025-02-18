@@ -18,14 +18,14 @@
         </div>
         <!-- Elementos del menu -->
         <ul>
-          <!-- dentro de los simbolo <> solo van atributos -->
-          <li><a href="#" aria-current="page">Características</a></li>
-          <li><a href="#">Envíos</a></li>
-          <li><a href="#">Pagos</a></li>
-          <li><a href="#">Contacto</a></li>
-        </ul>
+            <li><a href="#caracteristicas" aria-current="page">Características</a></li>
+            <li><a href="#envios">Envíos</a></li>
+            <li><a href="#pagos">Pagos</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
       </nav>
     </header>
+
     <!-- Contenido principal -->
     <main>
         <section id="hero" aria-labelledby="hero-heading">
@@ -36,19 +36,108 @@
             aria-describedby="hero-description"
           >
           
-          <!-- Título con un ID para asociarlo con aria-labelledby -->
           <h1 id="hero-heading">Velas aromáticas</h1>
-          
-          <!-- Descripción con un ID para asociarlo con aria-describedby -->
-          <p id="hero-description">
-            Descubre el equilibrio perfecto entre luz y aroma con nuestras velas
-            aromáticas. Elaboradas con ingredientes de alta calidad, crean un
-            ambiente acogedor y relajante en cualquier espacio. ¡Déjate envolver
-            por fragancias únicas y disfruta de momentos de paz!
-          </p>
+        <p id="hero-description">
+          Descubre el equilibrio perfecto entre luz y aroma con nuestras velas
+          aromáticas. Elaboradas con ingredientes de alta calidad, crean un
+          ambiente acogedor y relajante en cualquier espacio. ¡Déjate envolver
+          por fragancias únicas y disfruta de momentos de paz!
+        </p>
+      </section>
+
+      <!-- Sección de Características -->
+      <section id="caracteristicas" aria-labelledby="caracteristicas-heading">
+        <h2 id="caracteristicas-heading">Características</h2>
+        <ul>
+          <li>
+            <h3>Fragancias Naturales</h3>
+            <p>Nuestras velas están hechas con aceites esenciales puros que proporcionan aromas relajantes y duraderos.</p>
+            <img src="./img/fragancias-naturales.jpg" alt="Botellas de aceites esenciales naturales.">
+          </li>
+          <li>
+            <h3>Diseño Elegante</h3>
+            <p>Diseños modernos y minimalistas que se adaptan a cualquier decoración.</p>
+            <img src="./img/diseño-elegante.jpg" alt="Vela con diseño moderno y minimalista.">
+          </li>
+          <li>
+            <h3>Duración Prolongada</h3>
+            <p>Con más de 50 horas de duración, nuestras velas son perfectas para largos momentos de relajación.</p>
+            <img src="./img/duracion-prolongada.jpg" alt="Vela encendida con una llama estable.">
+          </li>
+        </ul>
+      </section>
+
+      <!-- Sección de Opciones de Envío -->
+      <section id="envios" aria-labelledby="envios-heading">
+        <h2 id="envios-heading">Opciones de Envío</h2>
+        <h3>Zonas de Cobertura</h3>
+        <ul>
+          <li>Lima Norte</li>
+          <li>Lima Centro</li>
+          <li>Lima Sur</li>
+          <li>Callao</li>
+          <li>Otras ciudades principales</li>
+        </ul>
+        <h3>Tipos de Envío</h3>
+        <ul>
+          <li>Estándar (3-5 días hábiles) - S/ 15.00 PEN</li>
+          <li>Express (1-2 días hábiles) - S/ 25.00 PEN</li>
+          <li>Envío otras ciudades (10 días maximo) - S/ 45.00 PEN</li>
+          <li>Recoge en tienda - Gratis</li>
+        </ul>
+      </section>
+
+      <!-- Sección de Opciones de Pago -->
+      <section id="pagos" aria-labelledby="pagos-heading">
+        <h2 id="pagos-heading">Opciones de Pago</h2>
+        <h3>Métodos de Pago Aceptados</h3>
+        <ul>
+          <li>Tarjeta de crédito / débito</li>
+          <li>PayPal</li>
+          <li>Transferencia bancaria</li>
+          <li>Yape / Plin</li>
+          <li>Efectivo al recoger</li>
+        </ul>
+        <h3>Promociones y Descuentos</h3>
+        <p>¡Obtén un 10% de descuento en tu primera compra usando el código <strong>BIENVENIDO10</strong>!</p>
+      </section>
+    </main>
+
+     <!-- Pie de página -->
+     <footer>
+        <!-- Información de contacto -->
+        <address>
+          <h3>Contacto</h3>
+          <ul>
+            <li><strong>Email:</strong> <a href="mailto:jaimecastromarchan.jcm@gmail.com">jaimecastromarchan.jcm@gmail.com</a></li>
+            <li><strong>Teléfono:</strong> <a href="tel:+51987654321">+51 999 888 777</a></li>
+            <li><strong>Horarios de atención:</strong> Lunes a Viernes, 9:00 AM - 6:00 PM</li>
+          </ul>
+        </address>
+  
+        <!-- Enlaces importantes -->
+        <nav aria-label="Enlaces importantes">
+          <h3>Enlaces Importantes</h3>
+          <ul>
+            <li><a href="/terminos-y-condiciones">Términos y Condiciones</a></li>
+          </ul>
+        </nav>
+  
+        <!-- Redes sociales -->
+        <nav aria-label="Redes sociales">
+          <h3>Síguenos</h3>
+          <ul>
+            <li><a href="https://www.facebook.com/jaimeraul.castromarchan" target="_blank" aria-label="Facebook">Facebook</a></li>
+            <li><a href="https://www.instagram.com/jaimeraulcastromarchan/" target="_blank" aria-label="Instagram">Instagram</a></li>
+            <li><a href="https://www.linkedin.com/in/jaimecastromarchan/" target="_blank" aria-label="Linkedin">Linkedin</a></li>
+            <li><a href="https://github.com/jobbjaime" target="_blank" aria-label="Github">Github</a></li>
+          </ul>
+        </nav>
+  
+        <!-- Derechos de autor -->
+        <section>
+          <p>&copy; 2025 Velas Aromáticas. Todos los derechos reservados.</p>
         </section>
-      </main>
-    <!-- Pie de página (links, reclamacion, dirección, etc) -->
-    <footer></footer>
-  </body>
-</html>
+      </footer>
+    </body>
+  </html>
