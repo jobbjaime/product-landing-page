@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <!-- Navagacion (menu)-->
+    <header>
+      <nav aria-label="Menú principal">
+        <!-- Logo de la empresa -->
+        <div>
+          <a href="./index.html" aria-label="Ir a la página de inicio">
+            <p>Velas Aromaticas</p>
+          </a>
+        </div>
+        <!-- Elementos del menu -->
+        <ul>
+          <!-- dentro de los simbolo <> solo van atributos -->
+          <li><a href="#" aria-current="page">Características</a></li>
+          <li><a href="#">Envíos</a></li>
+          <li><a href="#">Pagos</a></li>
+          <li><a href="#">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- Contenido principal -->
+    <main>
+        <section id="hero" aria-labelledby="hero-heading">
+          <!-- Imagen con texto alternativo descriptivo -->
+          <img 
+            src="./img/velas-aromaticas.jpg" 
+            alt="Vela aromática encendida con un aroma relajante, colocada sobre una mesa de madera."
+            aria-describedby="hero-description"
+          >
+          
+          <!-- Título con un ID para asociarlo con aria-labelledby -->
+          <h1 id="hero-heading">Velas aromáticas</h1>
+          
+          <!-- Descripción con un ID para asociarlo con aria-describedby -->
+          <p id="hero-description">
+            Descubre el equilibrio perfecto entre luz y aroma con nuestras velas
+            aromáticas. Elaboradas con ingredientes de alta calidad, crean un
+            ambiente acogedor y relajante en cualquier espacio. ¡Déjate envolver
+            por fragancias únicas y disfruta de momentos de paz!
+          </p>
+        </section>
+      </main>
+    <!-- Pie de página (links, reclamacion, dirección, etc) -->
+    <footer></footer>
+  </body>
+</html>

@@ -1,0 +1,56 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Remover estilos de lista */
+ul,
+ol {
+  list-style: none;
+}
+
+/* Resetear enlaces */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+header > nav > ul {
+  display: flex;
+  gap: 20px;
+}
+
+/*Busqueda por id*/
+#hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+#hero h1 {
+    font-size: 32px;
+}
+
+#hero img {
+    text-align: center;
+}
