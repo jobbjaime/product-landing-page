@@ -11,32 +11,28 @@
     <header>
       <nav aria-label="Menú principal">
         <!-- Logo de la empresa -->
-        <div>
+        <div class="logo">
           <a href="./index.html" aria-label="Ir a la página de inicio">
-            <p>Velas Aromaticas</p>
+              <p>VelAromatic</p>
           </a>
-        </div>
+      </div>
         <!-- Elementos del menu -->
         <ul>
-            <li><a href="#caracteristicas" aria-current="page">Características</a></li>
-            <li><a href="#envios">Envíos</a></li>
-            <li><a href="#pagos">Pagos</a></li>
-            <li><a href="#contacto">Contacto</a></li>
-          </ul>
+          <li>
+            <a href="#caracteristicas" aria-current="page">Características</a>
+          </li>
+          <li><a href="#envios">Envíos</a></li>
+          <li><a href="#pagos">Pagos</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+        <button id="theme-toggle" aria-label="Cambiar modo de color">🌙</button>
       </nav>
     </header>
 
     <!-- Contenido principal -->
     <main>
-        <section id="hero" aria-labelledby="hero-heading">
-          <!-- Imagen con texto alternativo descriptivo -->
-          <img 
-            src="./img/velas-aromaticas.jpg" 
-            alt="Vela aromática encendida con un aroma relajante, colocada sobre una mesa de madera."
-            aria-describedby="hero-description"
-          >
-          
-          <h1 id="hero-heading">Velas aromáticas</h1>
+      <section id="hero" aria-labelledby="hero-heading">
+        <h1 id="hero-heading">VelAromatic</h1>
         <p id="hero-description">
           Descubre el equilibrio perfecto entre luz y aroma con nuestras velas
           aromáticas. Elaboradas con ingredientes de alta calidad, crean un
@@ -51,18 +47,36 @@
         <ul>
           <li>
             <h3>Fragancias Naturales</h3>
-            <p>Nuestras velas están hechas con aceites esenciales puros que proporcionan aromas relajantes y duraderos.</p>
-            <img src="./img/fragancias-naturales.jpg" alt="Botellas de aceites esenciales naturales.">
+            <p>
+              Nuestras velas están hechas con aceites esenciales puros que
+              proporcionan aromas relajantes y duraderos.
+            </p>
+            <img
+              src="./img/fragancias-naturales.jpg"
+              alt="Botellas de aceites esenciales naturales."
+            />
           </li>
           <li>
             <h3>Diseño Elegante</h3>
-            <p>Diseños modernos y minimalistas que se adaptan a cualquier decoración.</p>
-            <img src="./img/diseño-elegante.jpg" alt="Vela con diseño moderno y minimalista.">
+            <p>
+              Diseños modernos y minimalistas que se adaptan a cualquier
+              decoración.
+            </p>
+            <img
+              src="./img/diseño-elegante.jpg"
+              alt="Vela con diseño moderno y minimalista."
+            />
           </li>
           <li>
             <h3>Duración Prolongada</h3>
-            <p>Con más de 50 horas de duración, nuestras velas son perfectas para largos momentos de relajación.</p>
-            <img src="./img/duracion-prolongada.jpg" alt="Vela encendida con una llama estable.">
+            <p>
+              Con más de 50 horas de duración, nuestras velas son perfectas para
+              largos momentos de relajación.
+            </p>
+            <img
+              src="./img/duracion-prolongada.jpg"
+              alt="Vela encendida con una llama estable."
+            />
           </li>
         </ul>
       </section>
@@ -99,45 +113,112 @@
           <li>Efectivo al recoger</li>
         </ul>
         <h3>Promociones y Descuentos</h3>
-        <p>¡Obtén un 10% de descuento en tu primera compra usando el código <strong>BIENVENIDO10</strong>!</p>
+        <p>
+          ¡Obtén un 10% de descuento en tu primera compra usando el código
+          <strong>BIENVENIDO10</strong>!
+        </p>
       </section>
     </main>
 
-     <!-- Pie de página -->
-     <footer>
-        <!-- Información de contacto -->
-        <address>
-          <h3>Contacto</h3>
-          <ul>
-            <li><strong>Email:</strong> <a href="mailto:jaimecastromarchan.jcm@gmail.com">jaimecastromarchan.jcm@gmail.com</a></li>
-            <li><strong>Teléfono:</strong> <a href="tel:+51987654321">+51 999 888 777</a></li>
-            <li><strong>Horarios de atención:</strong> Lunes a Viernes, 9:00 AM - 6:00 PM</li>
-          </ul>
-        </address>
-  
-        <!-- Enlaces importantes -->
-        <nav aria-label="Enlaces importantes">
-          <h3>Enlaces Importantes</h3>
-          <ul>
-            <li><a href="/terminos-y-condiciones">Términos y Condiciones</a></li>
-          </ul>
-        </nav>
-  
-        <!-- Redes sociales -->
-        <nav aria-label="Redes sociales">
-          <h3>Síguenos</h3>
-          <ul>
-            <li><a href="https://www.facebook.com/jaimeraul.castromarchan" target="_blank" aria-label="Facebook">Facebook</a></li>
-            <li><a href="https://www.instagram.com/jaimeraulcastromarchan/" target="_blank" aria-label="Instagram">Instagram</a></li>
-            <li><a href="https://www.linkedin.com/in/jaimecastromarchan/" target="_blank" aria-label="Linkedin">Linkedin</a></li>
-            <li><a href="https://github.com/jobbjaime" target="_blank" aria-label="Github">Github</a></li>
-          </ul>
-        </nav>
-  
-        <!-- Derechos de autor -->
-        <section>
-          <p>&copy; 2025 Velas Aromáticas. Todos los derechos reservados.</p>
-        </section>
-      </footer>
-    </body>
-  </html>
+    <!-- Pie de página -->
+    <footer>
+      <!-- Información de contacto -->
+      <address>
+        <h3>Contacto</h3>
+        <ul>
+          <li>
+            <strong>Email:</strong>
+            <a href="mailto:jaimecastromarchan.jcm@gmail.com"
+              >jaimecastromarchan.jcm@gmail.com</a
+            >
+          </li>
+          <li>
+            <strong>Teléfono:</strong>
+            <a href="tel:+51987654321">+51 999 888 777</a>
+          </li>
+          <li>
+            <strong>Horarios de atención:</strong> Lunes a Viernes, 9:00 AM -
+            6:00 PM
+          </li>
+        </ul>
+      </address>
+
+      <!-- Enlaces importantes -->
+      <nav aria-label="Enlaces importantes">
+        <h3>Enlaces Importantes</h3>
+        <ul>
+          <li><a href="/terminos-y-condiciones">Términos y Condiciones</a></li>
+        </ul>
+      </nav>
+
+      <!-- Redes sociales -->
+      <nav aria-label="Redes sociales">
+        <h3>Síguenos</h3>
+        <ul>
+          <li>
+            <a
+              href="https://www.facebook.com/jaimeraul.castromarchan"
+              target="_blank"
+              aria-label="Facebook"
+              >Facebook</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.instagram.com/jaimeraulcastromarchan/"
+              target="_blank"
+              aria-label="Instagram"
+              >Instagram</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/jaimecastromarchan/"
+              target="_blank"
+              aria-label="Linkedin"
+              >Linkedin</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://github.com/jobbjaime"
+              target="_blank"
+              aria-label="Github"
+              >Github</a
+            >
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Derechos de autor -->
+      <section>
+        <p>&copy; 2025 Velas Aromáticas. Todos los derechos reservados.</p>
+      </section>
+    </footer>
+
+    <!-- Código JavaScript -->
+    <script>
+      const themeToggle = document.getElementById('theme-toggle');
+      const body = document.body;
+
+      themeToggle.addEventListener('click', () => {
+          body.classList.toggle('dark-mode');
+
+          if (body.classList.contains('dark-mode')) {
+              themeToggle.textContent = '☀️';
+              localStorage.setItem('theme', 'dark');
+          } else {
+              themeToggle.textContent = '🌙';
+              localStorage.setItem('theme', 'light');
+          }
+      });
+
+      // Mantener la preferencia del usuario
+      if (localStorage.getItem('theme') === 'dark') {
+          body.classList.add('dark-mode');
+          themeToggle.textContent = '☀️';
+      }
+  </script>
+
+  </body>
+</html>
