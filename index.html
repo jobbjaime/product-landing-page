@@ -13,9 +13,9 @@
         <!-- Logo de la empresa -->
         <div class="logo">
           <a href="./index.html" aria-label="Ir a la página de inicio">
-              <p>VelAromatic</p>
+            <p>VelAromatic</p>
           </a>
-      </div>
+        </div>
         <!-- Elementos del menu -->
         <ul>
           <li>
@@ -23,6 +23,8 @@
           </li>
           <li><a href="#envios">Envíos</a></li>
           <li><a href="#pagos">Pagos</a></li>
+          <!-- Se agrega aqui el nuevo boton de galeria -->
+          <li><a href="#galeria">Galería</a></li>
           <li><a href="#contacto">Contacto</a></li>
         </ul>
         <button id="theme-toggle" aria-label="Cambiar modo de color">🌙</button>
@@ -79,6 +81,64 @@
             />
           </li>
         </ul>
+      </section>
+
+      <!-- Nueva Sección de Galería -->
+      <section id="galeria" aria-labelledby="galeria-heading">
+        <h2 id="galeria-heading">Galería de Imágenes</h2>
+        <article
+          class="galeria-grid"
+          aria-label="Colección de velas aromáticas"
+        >
+          <figure>
+            <img
+              src="./img/velas-en-vaso.jpg"
+              alt="Vela aromática de lavanda en vaso de cristal"
+              loading="lazy"
+            />
+            <figcaption>Vela de Lavanda</figcaption>
+          </figure>
+          <figure>
+            <img
+              src="./img/vainilla-decoracion-floral.jpg"
+              alt="Vela aromática de vainilla con decoración floral"
+              loading="lazy"
+            />
+            <figcaption>Vela con Decoración</figcaption>
+          </figure>
+          <figure>
+            <img
+              src="./img/set-velas-citricas.jpg"
+              alt="Set de velas aromáticas con esencias cítricas"
+              loading="lazy"
+            />
+            <figcaption>Colección Cítrica</figcaption>
+          </figure>
+          <figure>
+            <img
+              src="./img/velas-canela-rustico.jpg"
+              alt="Vela aromática de canela en recipiente rústico"
+              loading="lazy"
+            />
+            <figcaption>Vela de Canela</figcaption>
+          </figure>
+          <figure>
+            <img
+              src="./img/velas-detalle-dorado.jpg"
+              alt="Vela aromática de jazmín con detalles dorados"
+              loading="lazy"
+            />
+            <figcaption>Vela con Dorados</figcaption>
+          </figure>
+          <figure>
+            <img
+              src="./img/velas-elegantes.jpg"
+              alt="Vela aromática de sándalo en envase elegante"
+              loading="lazy"
+            />
+            <figcaption>Vela Elegantes</figcaption>
+          </figure>
+        </article>
       </section>
 
       <!-- Sección de Opciones de Envío -->
@@ -198,27 +258,26 @@
 
     <!-- Código JavaScript -->
     <script>
-      const themeToggle = document.getElementById('theme-toggle');
+      const themeToggle = document.getElementById("theme-toggle");
       const body = document.body;
 
-      themeToggle.addEventListener('click', () => {
-          body.classList.toggle('dark-mode');
+      themeToggle.addEventListener("click", () => {
+        body.classList.toggle("dark-mode");
 
-          if (body.classList.contains('dark-mode')) {
-              themeToggle.textContent = '☀️';
-              localStorage.setItem('theme', 'dark');
-          } else {
-              themeToggle.textContent = '🌙';
-              localStorage.setItem('theme', 'light');
-          }
+        if (body.classList.contains("dark-mode")) {
+          themeToggle.textContent = "☀️";
+          localStorage.setItem("theme", "dark");
+        } else {
+          themeToggle.textContent = "🌙";
+          localStorage.setItem("theme", "light");
+        }
       });
 
       // Mantener la preferencia del usuario
-      if (localStorage.getItem('theme') === 'dark') {
-          body.classList.add('dark-mode');
-          themeToggle.textContent = '☀️';
+      if (localStorage.getItem("theme") === "dark") {
+        body.classList.add("dark-mode");
+        themeToggle.textContent = "☀️";
       }
-  </script>
-
+    </script>
   </body>
 </html>
