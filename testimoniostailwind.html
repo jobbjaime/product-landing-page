@@ -1,253 +1,561 @@
 <!DOCTYPE html>
 <html lang="es" class="light">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Testimonios - VelAromatic</title>
-  <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
-</head>
-<body class="bg-[#e7d0b7] dark:bg-[#1a1a1a] text-[#333] dark:text-[#e1e1e1] transition-colors duration-300">
-  <!-- Navegación (menu) -->
-  <header class="bg-[#ded0c0] dark:bg-[#2d2d2d] text-[#333] dark:text-[#e1e1e1] fixed top-0 left-0 right-0 z-10 shadow-md h-[70px]">
-    <nav class="max-w-7xl mx-auto px-4 h-full flex items-center justify-between" aria-label="Menú principal">
-      <!-- Logo de la empresa -->
-      <a href="./index.html" aria-label="Ir a la página de inicio" class="text-xl font-bold">
-        VelAromatic
-      </a>
-      
-      <!-- Elementos del menu -->
-      <ul class="hidden md:flex items-center space-x-6">
-        <li><a href="./index.html#caracteristicas" class="hover:opacity-80 transition-opacity">Características</a></li>
-        <li><a href="./index.html#galeria" class="hover:opacity-80 transition-opacity">Galería</a></li>
-        <li><a href="./index.html#envios" class="hover:opacity-80 transition-opacity">Envíos</a></li>
-        <li><a href="./index.html#pagos" class="hover:opacity-80 transition-opacity">Pagos</a></li>
-        <li><a href="testimonios.html" aria-current="page" class="font-medium border-b-2 border-[#4a90e2] dark:border-[#6eb5ff]">Testimonios</a></li>
-        <li><a href="./index.html#contacto" class="hover:opacity-80 transition-opacity">Contacto</a></li>
-      </ul>
-      
-      <!-- Menú móvil con input checkbox - CORREGIDO: El menú ahora se centra en pantallas pequeñas -->
-      <nav class="md:hidden relative">
-        <input type="checkbox" id="menu-toggle" class="hidden peer">
-        <label for="menu-toggle" class="cursor-pointer text-[#333] dark:text-[#e1e1e1] text-2xl">☰</label>
-        <ul class="absolute top-10 right-0 left-0 mx-auto w-64 bg-[#ded0c0] dark:bg-[#2d2d2d] text-[#333] dark:text-[#e1e1e1] hidden peer-checked:block p-6 shadow-md z-20 rounded-lg text-center">
-          <li class="py-3 border-b border-[#C1AA92] dark:border-[#333]"><a href="./index.html#caracteristicas" class="block hover:text-[#4a90e2] dark:hover:text-[#6eb5ff] transition-colors">Características</a></li>
-          <li class="py-3 border-b border-[#C1AA92] dark:border-[#333]"><a href="./index.html#galeria" class="block hover:text-[#4a90e2] dark:hover:text-[#6eb5ff] transition-colors">Galería</a></li>
-          <li class="py-3 border-b border-[#C1AA92] dark:border-[#333]"><a href="./index.html#envios" class="block hover:text-[#4a90e2] dark:hover:text-[#6eb5ff] transition-colors">Envíos</a></li>
-          <li class="py-3 border-b border-[#C1AA92] dark:border-[#333]"><a href="./index.html#pagos" class="block hover:text-[#4a90e2] dark:hover:text-[#6eb5ff] transition-colors">Pagos</a></li>
-          <li class="py-3 border-b border-[#C1AA92] dark:border-[#333]"><a href="testimonios.html" aria-current="page" class="block font-medium text-[#4a90e2] dark:text-[#6eb5ff]">Testimonios</a></li>
-          <li class="py-3"><a href="./index.html#contacto" class="block hover:text-[#4a90e2] dark:hover:text-[#6eb5ff] transition-colors">Contacto</a></li>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Testimonios - VelAromatic</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+  </head>
+  <body
+    class="bg-[#e7d0b7] dark:bg-[#1a1a1a] text-[#333] dark:text-[#e1e1e1] transition-colors duration-300"
+  >
+    <!-- Navegación (menu) -->
+    <header
+      class="bg-[#ded0c0] dark:bg-[#2d2d2d] text-[#333] dark:text-[#e1e1e1] fixed top-0 left-0 right-0 z-10 shadow-md h-[70px]"
+    >
+      <nav
+        class="max-w-7xl mx-auto px-4 h-full flex items-center justify-between"
+        aria-label="Menú principal"
+      >
+        <!-- Logo de la empresa -->
+        <a
+          href="./index.html"
+          aria-label="Ir a la página de inicio"
+          class="text-xl font-bold"
+        >
+          VelAromatic
+        </a>
+
+        <!-- Elementos del menu -->
+        <ul class="hidden md:flex items-center space-x-6">
+          <li>
+            <a
+              href="./index.html#caracteristicas"
+              class="hover:opacity-80 transition-opacity"
+              >Características</a
+            >
+          </li>
+          <li>
+            <a
+              href="./index.html#galeria"
+              class="hover:opacity-80 transition-opacity"
+              >Galería</a
+            >
+          </li>
+          <li>
+            <a
+              href="./index.html#envios"
+              class="hover:opacity-80 transition-opacity"
+              >Envíos</a
+            >
+          </li>
+          <li>
+            <a
+              href="./index.html#pagos"
+              class="hover:opacity-80 transition-opacity"
+              >Pagos</a
+            >
+          </li>
+          <li>
+            <a
+              href="testimonios.html"
+              aria-current="page"
+              class="font-medium border-b-2 border-[#4a90e2] dark:border-[#6eb5ff]"
+              >Testimonios</a
+            >
+          </li>
+          <li>
+            <a
+              href="./index.html#contacto"
+              class="hover:opacity-80 transition-opacity"
+              >Contacto</a
+            >
+          </li>
         </ul>
+
+        <!-- Menú móvil con input checkbox - CORREGIDO: El menú ahora se centra en pantallas pequeñas -->
+        <nav class="md:hidden relative">
+          <input type="checkbox" id="menu-toggle" class="hidden peer" />
+          <label
+            for="menu-toggle"
+            class="cursor-pointer text-[#333] dark:text-[#e1e1e1] text-2xl"
+            >☰</label
+          >
+          <ul
+            class="absolute top-10 right-0 left-0 mx-auto w-64 bg-[#ded0c0] dark:bg-[#2d2d2d] text-[#333] dark:text-[#e1e1e1] hidden peer-checked:block p-6 shadow-md z-20 rounded-lg text-center"
+          >
+            <li class="py-3 border-b border-[#C1AA92] dark:border-[#333]">
+              <a
+                href="./index.html#caracteristicas"
+                class="block hover:text-[#4a90e2] dark:hover:text-[#6eb5ff] transition-colors"
+                >Características</a
+              >
+            </li>
+            <li class="py-3 border-b border-[#C1AA92] dark:border-[#333]">
+              <a
+                href="./index.html#galeria"
+                class="block hover:text-[#4a90e2] dark:hover:text-[#6eb5ff] transition-colors"
+                >Galería</a
+              >
+            </li>
+            <li class="py-3 border-b border-[#C1AA92] dark:border-[#333]">
+              <a
+                href="./index.html#envios"
+                class="block hover:text-[#4a90e2] dark:hover:text-[#6eb5ff] transition-colors"
+                >Envíos</a
+              >
+            </li>
+            <li class="py-3 border-b border-[#C1AA92] dark:border-[#333]">
+              <a
+                href="./index.html#pagos"
+                class="block hover:text-[#4a90e2] dark:hover:text-[#6eb5ff] transition-colors"
+                >Pagos</a
+              >
+            </li>
+            <li class="py-3 border-b border-[#C1AA92] dark:border-[#333]">
+              <a
+                href="testimonios.html"
+                aria-current="page"
+                class="block font-medium text-[#4a90e2] dark:text-[#6eb5ff]"
+                >Testimonios</a
+              >
+            </li>
+            <li class="py-3">
+              <a
+                href="./index.html#contacto"
+                class="block hover:text-[#4a90e2] dark:hover:text-[#6eb5ff] transition-colors"
+                >Contacto</a
+              >
+            </li>
+          </ul>
+        </nav>
+
+        <button
+          id="theme-toggle"
+          aria-label="Cambiar modo de color"
+          class="ml-4 bg-[#4a90e2] dark:bg-[#6eb5ff] hover:bg-[#357abd] dark:hover:bg-[#8ac4ff] text-white px-3 py-2 rounded transition-colors"
+        >
+          🌙
+        </button>
       </nav>
-      
-      <button id="theme-toggle" aria-label="Cambiar modo de color" class="ml-4 bg-[#4a90e2] dark:bg-[#6eb5ff] hover:bg-[#357abd] dark:hover:bg-[#8ac4ff] text-white px-3 py-2 rounded transition-colors">
-        🌙
-      </button>
-    </nav>
-  </header>
+    </header>
 
-  <main class="max-w-7xl mx-auto mt-[90px] mb-8 px-4">
-    <h1 class="text-2xl text-[#4a90e2] dark:text-[#6eb5ff] font-bold mb-8">Testimonios de Clientes</h1>
-    
-    <!-- CORREGIDO: Uso de flexbox para mantener el orden jerárquico pero cambiar visualmente las posiciones -->
-    <section class="flex flex-col md:flex-row gap-8">
-      <!-- Contenido principal: Testimonios - Mantenemos el orden jerárquico -->
-      <main class="w-full md:w-3/4 md:order-2">
-        <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <article class="bg-[#C1AA92] dark:bg-[#333] rounded-lg p-6 shadow-md transition-transform duration-300 hover:-translate-y-1">
-            <header class="flex justify-between items-start mb-4">
-              <figure class="flex items-center gap-3 m-0">
-                <img src="/api/placeholder/80/80" alt="Foto de Marta L." class="w-12 h-12 rounded-full object-cover border-2 border-[#4a90e2] dark:border-[#6eb5ff]">
-                <figcaption class="font-bold">Marta L.</figcaption>
-              </figure>
-              <span class="text-yellow-400 text-lg">★★★★★</span>
-            </header>
-            <p class="text-[#4a90e2] dark:text-[#6eb5ff] font-medium my-2">Vela de Lavanda</p>
-            <blockquote class="border-l-4 border-[#4a90e2] dark:border-[#6eb5ff] pl-4 my-4 italic">
-              <p>La fragancia de lavanda es perfecta, no demasiado intensa pero suficiente para relajarme después de un largo día de trabajo. La vela duró incluso más de lo prometido.</p>
-            </blockquote>
-            <footer>
-              <time datetime="2024-12-15" class="text-right text-sm text-gray-600 dark:text-gray-400 block mt-4">15 de diciembre, 2024</time>
-            </footer>
-          </article>
+    <main class="max-w-7xl mx-auto mt-[90px] mb-8 px-4">
+      <h1 class="text-2xl text-[#4a90e2] dark:text-[#6eb5ff] font-bold mb-8">
+        Testimonios de Clientes
+      </h1>
 
-          <article class="bg-[#C1AA92] dark:bg-[#333] rounded-lg p-6 shadow-md transition-transform duration-300 hover:-translate-y-1">
-            <header class="flex justify-between items-start mb-4">
-              <figure class="flex items-center gap-3 m-0">
-                <img src="/api/placeholder/80/80" alt="Foto de Carlos R." class="w-12 h-12 rounded-full object-cover border-2 border-[#4a90e2] dark:border-[#6eb5ff]">
-                <figcaption class="font-bold">Carlos R.</figcaption>
-              </figure>
-              <span class="text-yellow-400 text-lg">★★★★★</span>
-            </header>
-            <p class="text-[#4a90e2] dark:text-[#6eb5ff] font-medium my-2">Vela de Vainilla</p>
-            <blockquote class="border-l-4 border-[#4a90e2] dark:border-[#6eb5ff] pl-4 my-4 italic">
-              <p>El aroma a vainilla es increíblemente acogedor. He comprado muchas velas aromáticas antes, pero esta es, por mucho, la mejor en términos de intensidad y duración.</p>
-            </blockquote>
-            <footer>
-              <time datetime="2024-12-10" class="text-right text-sm text-gray-600 dark:text-gray-400 block mt-4">10 de diciembre, 2024</time>
-            </footer>
-          </article>
+      <!-- CORREGIDO: Uso de flexbox para mantener el orden jerárquico pero cambiar visualmente las posiciones -->
+      <section class="flex flex-col md:flex-row gap-8">
+        <!-- Contenido principal: Testimonios - Mantenemos el orden jerárquico -->
+        <main class="w-full md:w-3/4 md:order-2">
+          <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <article
+              class="bg-[#C1AA92] dark:bg-[#333] rounded-lg p-6 shadow-md transition-transform duration-300 hover:-translate-y-1"
+            >
+              <header class="flex justify-between items-start mb-4">
+                <figure class="flex items-center gap-3 m-0">
+                  <img
+                    src="/api/placeholder/80/80"
+                    alt="Foto de Marta L."
+                    class="w-12 h-12 rounded-full object-cover border-2 border-[#4a90e2] dark:border-[#6eb5ff]"
+                  />
+                  <figcaption class="font-bold">Marta L.</figcaption>
+                </figure>
+                <span class="text-yellow-400 text-lg">★★★★★</span>
+              </header>
+              <p class="text-[#4a90e2] dark:text-[#6eb5ff] font-medium my-2">
+                Vela de Lavanda
+              </p>
+              <blockquote
+                class="border-l-4 border-[#4a90e2] dark:border-[#6eb5ff] pl-4 my-4 italic"
+              >
+                <p>
+                  La fragancia de lavanda es perfecta, no demasiado intensa pero
+                  suficiente para relajarme después de un largo día de trabajo.
+                  La vela duró incluso más de lo prometido.
+                </p>
+              </blockquote>
+              <footer>
+                <time
+                  datetime="2024-12-15"
+                  class="text-right text-sm text-gray-600 dark:text-gray-400 block mt-4"
+                  >15 de diciembre, 2024</time
+                >
+              </footer>
+            </article>
 
-          <article class="bg-[#C1AA92] dark:bg-[#333] rounded-lg p-6 shadow-md transition-transform duration-300 hover:-translate-y-1">
-            <header class="flex justify-between items-start mb-4">
-              <figure class="flex items-center gap-3 m-0">
-                <img src="/api/placeholder/80/80" alt="Foto de Ana P." class="w-12 h-12 rounded-full object-cover border-2 border-[#4a90e2] dark:border-[#6eb5ff]">
-                <figcaption class="font-bold">Ana P.</figcaption>
-              </figure>
-              <span class="text-yellow-400 text-lg">★★★★☆</span>
-            </header>
-            <p class="text-[#4a90e2] dark:text-[#6eb5ff] font-medium my-2">Colección Cítrica</p>
-            <blockquote class="border-l-4 border-[#4a90e2] dark:border-[#6eb5ff] pl-4 my-4 italic">
-              <p>Las fragancias cítricas son refrescantes y enérgicas. Perfectas para mi oficina en casa. Le quito una estrella porque el envase de una de ellas vino ligeramente dañado.</p>
-            </blockquote>
-            <footer>
-              <time datetime="2024-11-28" class="text-right text-sm text-gray-600 dark:text-gray-400 block mt-4">28 de noviembre, 2024</time>
-            </footer>
-          </article>
+            <article
+              class="bg-[#C1AA92] dark:bg-[#333] rounded-lg p-6 shadow-md transition-transform duration-300 hover:-translate-y-1"
+            >
+              <header class="flex justify-between items-start mb-4">
+                <figure class="flex items-center gap-3 m-0">
+                  <img
+                    src="/api/placeholder/80/80"
+                    alt="Foto de Carlos R."
+                    class="w-12 h-12 rounded-full object-cover border-2 border-[#4a90e2] dark:border-[#6eb5ff]"
+                  />
+                  <figcaption class="font-bold">Carlos R.</figcaption>
+                </figure>
+                <span class="text-yellow-400 text-lg">★★★★★</span>
+              </header>
+              <p class="text-[#4a90e2] dark:text-[#6eb5ff] font-medium my-2">
+                Vela de Vainilla
+              </p>
+              <blockquote
+                class="border-l-4 border-[#4a90e2] dark:border-[#6eb5ff] pl-4 my-4 italic"
+              >
+                <p>
+                  El aroma a vainilla es increíblemente acogedor. He comprado
+                  muchas velas aromáticas antes, pero esta es, por mucho, la
+                  mejor en términos de intensidad y duración.
+                </p>
+              </blockquote>
+              <footer>
+                <time
+                  datetime="2024-12-10"
+                  class="text-right text-sm text-gray-600 dark:text-gray-400 block mt-4"
+                  >10 de diciembre, 2024</time
+                >
+              </footer>
+            </article>
 
-          <article class="bg-[#C1AA92] dark:bg-[#333] rounded-lg p-6 shadow-md transition-transform duration-300 hover:-translate-y-1">
-            <header class="flex justify-between items-start mb-4">
-              <figure class="flex items-center gap-3 m-0">
-                <img src="/api/placeholder/80/80" alt="Foto de Miguel S." class="w-12 h-12 rounded-full object-cover border-2 border-[#4a90e2] dark:border-[#6eb5ff]">
-                <figcaption class="font-bold">Miguel S.</figcaption>
-              </figure>
-              <span class="text-yellow-400 text-lg">★★★★★</span>
-            </header>
-            <p class="text-[#4a90e2] dark:text-[#6eb5ff] font-medium my-2">Vela de Canela</p>
-            <blockquote class="border-l-4 border-[#4a90e2] dark:border-[#6eb5ff] pl-4 my-4 italic">
-              <p>Compré la vela de canela para la temporada navideña y ha superado mis expectativas. El aroma cálido llena toda la sala y crea un ambiente festivo perfecto.</p>
-            </blockquote>
-            <footer>
-              <time datetime="2024-12-05" class="text-right text-sm text-gray-600 dark:text-gray-400 block mt-4">5 de diciembre, 2024</time>
-            </footer>
-          </article>
+            <article
+              class="bg-[#C1AA92] dark:bg-[#333] rounded-lg p-6 shadow-md transition-transform duration-300 hover:-translate-y-1"
+            >
+              <header class="flex justify-between items-start mb-4">
+                <figure class="flex items-center gap-3 m-0">
+                  <img
+                    src="/api/placeholder/80/80"
+                    alt="Foto de Ana P."
+                    class="w-12 h-12 rounded-full object-cover border-2 border-[#4a90e2] dark:border-[#6eb5ff]"
+                  />
+                  <figcaption class="font-bold">Ana P.</figcaption>
+                </figure>
+                <span class="text-yellow-400 text-lg">★★★★☆</span>
+              </header>
+              <p class="text-[#4a90e2] dark:text-[#6eb5ff] font-medium my-2">
+                Colección Cítrica
+              </p>
+              <blockquote
+                class="border-l-4 border-[#4a90e2] dark:border-[#6eb5ff] pl-4 my-4 italic"
+              >
+                <p>
+                  Las fragancias cítricas son refrescantes y enérgicas.
+                  Perfectas para mi oficina en casa. Le quito una estrella
+                  porque el envase de una de ellas vino ligeramente dañado.
+                </p>
+              </blockquote>
+              <footer>
+                <time
+                  datetime="2024-11-28"
+                  class="text-right text-sm text-gray-600 dark:text-gray-400 block mt-4"
+                  >28 de noviembre, 2024</time
+                >
+              </footer>
+            </article>
 
-          <article class="bg-[#C1AA92] dark:bg-[#333] rounded-lg p-6 shadow-md transition-transform duration-300 hover:-translate-y-1">
-            <header class="flex justify-between items-start mb-4">
-              <figure class="flex items-center gap-3 m-0">
-                <img src="/api/placeholder/80/80" alt="Foto de Laura T." class="w-12 h-12 rounded-full object-cover border-2 border-[#4a90e2] dark:border-[#6eb5ff]">
-                <figcaption class="font-bold">Laura T.</figcaption>
-              </figure>
-              <span class="text-yellow-400 text-lg">★★★★★</span>
-            </header>
-            <p class="text-[#4a90e2] dark:text-[#6eb5ff] font-medium my-2">Vela de Jazmín</p>
-            <blockquote class="border-l-4 border-[#4a90e2] dark:border-[#6eb5ff] pl-4 my-4 italic">
-              <p>El aroma del jazmín es simplemente maravilloso, muy fiel a la flor real. La presentación es elegante y queda perfecta en mi mesa de noche.</p>
-            </blockquote>
-            <footer>
-              <time datetime="2024-11-20" class="text-right text-sm text-gray-600 dark:text-gray-400 block mt-4">20 de noviembre, 2024</time>
-            </footer>
-          </article>
+            <article
+              class="bg-[#C1AA92] dark:bg-[#333] rounded-lg p-6 shadow-md transition-transform duration-300 hover:-translate-y-1"
+            >
+              <header class="flex justify-between items-start mb-4">
+                <figure class="flex items-center gap-3 m-0">
+                  <img
+                    src="/api/placeholder/80/80"
+                    alt="Foto de Miguel S."
+                    class="w-12 h-12 rounded-full object-cover border-2 border-[#4a90e2] dark:border-[#6eb5ff]"
+                  />
+                  <figcaption class="font-bold">Miguel S.</figcaption>
+                </figure>
+                <span class="text-yellow-400 text-lg">★★★★★</span>
+              </header>
+              <p class="text-[#4a90e2] dark:text-[#6eb5ff] font-medium my-2">
+                Vela de Canela
+              </p>
+              <blockquote
+                class="border-l-4 border-[#4a90e2] dark:border-[#6eb5ff] pl-4 my-4 italic"
+              >
+                <p>
+                  Compré la vela de canela para la temporada navideña y ha
+                  superado mis expectativas. El aroma cálido llena toda la sala
+                  y crea un ambiente festivo perfecto.
+                </p>
+              </blockquote>
+              <footer>
+                <time
+                  datetime="2024-12-05"
+                  class="text-right text-sm text-gray-600 dark:text-gray-400 block mt-4"
+                  >5 de diciembre, 2024</time
+                >
+              </footer>
+            </article>
 
-          <article class="bg-[#C1AA92] dark:bg-[#333] rounded-lg p-6 shadow-md transition-transform duration-300 hover:-translate-y-1">
-            <header class="flex justify-between items-start mb-4">
-              <figure class="flex items-center gap-3 m-0">
-                <img src="/api/placeholder/80/80" alt="Foto de Roberto M." class="w-12 h-12 rounded-full object-cover border-2 border-[#4a90e2] dark:border-[#6eb5ff]">
-                <figcaption class="font-bold">Roberto M.</figcaption>
-              </figure>
-              <span class="text-yellow-400 text-lg">★★★★☆</span>
-            </header>
-            <p class="text-[#4a90e2] dark:text-[#6eb5ff] font-medium my-2">Vela de Sándalo</p>
-            <blockquote class="border-l-4 border-[#4a90e2] dark:border-[#6eb5ff] pl-4 my-4 italic">
-              <p>El aroma a sándalo es sofisticado y relajante. Crea un ambiente perfecto para meditar. El único detalle es que esperaba que durara un poco más.</p>
-            </blockquote>
-            <footer>
-              <time datetime="2024-12-03" class="text-right text-sm text-gray-600 dark:text-gray-400 block mt-4">3 de diciembre, 2024</time>
-            </footer>
-          </article>
-        </section>
-      </main>
-      
-      <!-- Barra lateral de filtros - CORREGIDO: movida a la izquierda usando flexbox -->
-      <aside class="w-full md:w-1/4 flex-shrink-0 bg-[#C1AA92] dark:bg-[#333] rounded-lg p-6 shadow-md h-fit md:order-1">
-        <h2 class="text-[#4a90e2] dark:text-[#6eb5ff] text-lg font-semibold mb-6">Filtros</h2>
-        <form aria-label="Filtros de testimonios">
-          <fieldset class="border border-[#4a90e2] dark:border-[#6eb5ff] rounded p-4 mb-6">
-            <legend class="text-[#4a90e2] dark:text-[#6eb5ff] font-bold px-2">Valoración</legend>
-            <label class="block my-2 cursor-pointer">
-              <input type="checkbox" name="rating" value="5" checked class="mr-2"> 5 estrellas
-            </label>
-            <label class="block my-2 cursor-pointer">
-              <input type="checkbox" name="rating" value="4" checked class="mr-2"> 4 estrellas
-            </label>
-            <label class="block my-2 cursor-pointer">
-              <input type="checkbox" name="rating" value="3" class="mr-2"> 3 estrellas
-            </label>
-            <label class="block my-2 cursor-pointer">
-              <input type="checkbox" name="rating" value="2" class="mr-2"> 2 estrellas
-            </label>
-            <label class="block my-2 cursor-pointer">
-              <input type="checkbox" name="rating" value="1" class="mr-2"> 1 estrella
-            </label>
-          </fieldset>
+            <article
+              class="bg-[#C1AA92] dark:bg-[#333] rounded-lg p-6 shadow-md transition-transform duration-300 hover:-translate-y-1"
+            >
+              <header class="flex justify-between items-start mb-4">
+                <figure class="flex items-center gap-3 m-0">
+                  <img
+                    src="/api/placeholder/80/80"
+                    alt="Foto de Laura T."
+                    class="w-12 h-12 rounded-full object-cover border-2 border-[#4a90e2] dark:border-[#6eb5ff]"
+                  />
+                  <figcaption class="font-bold">Laura T.</figcaption>
+                </figure>
+                <span class="text-yellow-400 text-lg">★★★★★</span>
+              </header>
+              <p class="text-[#4a90e2] dark:text-[#6eb5ff] font-medium my-2">
+                Vela de Jazmín
+              </p>
+              <blockquote
+                class="border-l-4 border-[#4a90e2] dark:border-[#6eb5ff] pl-4 my-4 italic"
+              >
+                <p>
+                  El aroma del jazmín es simplemente maravilloso, muy fiel a la
+                  flor real. La presentación es elegante y queda perfecta en mi
+                  mesa de noche.
+                </p>
+              </blockquote>
+              <footer>
+                <time
+                  datetime="2024-11-20"
+                  class="text-right text-sm text-gray-600 dark:text-gray-400 block mt-4"
+                  >20 de noviembre, 2024</time
+                >
+              </footer>
+            </article>
 
-          <fieldset class="border border-[#4a90e2] dark:border-[#6eb5ff] rounded p-4 mb-6">
-            <legend class="text-[#4a90e2] dark:text-[#6eb5ff] font-bold px-2">Productos</legend>
-            <label class="block my-2 cursor-pointer">
-              <input type="checkbox" name="producto" value="vela-lavanda" checked class="mr-2"> Vela de Lavanda
-            </label>
-            <label class="block my-2 cursor-pointer">
-              <input type="checkbox" name="producto" value="vela-vainilla" checked class="mr-2"> Vela de Vainilla
-            </label>
-            <label class="block my-2 cursor-pointer">
-              <input type="checkbox" name="producto" value="coleccion-citrica" class="mr-2"> Colección Cítrica
-            </label>
-            <label class="block my-2 cursor-pointer">
-              <input type="checkbox" name="producto" value="vela-canela" class="mr-2"> Vela de Canela
-            </label>
-            <label class="block my-2 cursor-pointer">
-              <input type="checkbox" name="producto" value="vela-jazmin" class="mr-2"> Vela de Jazmín
-            </label>
-            <label class="block my-2 cursor-pointer">
-              <input type="checkbox" name="producto" value="vela-sandalo" class="mr-2"> Vela de Sándalo
-            </label>
-          </fieldset>
+            <article
+              class="bg-[#C1AA92] dark:bg-[#333] rounded-lg p-6 shadow-md transition-transform duration-300 hover:-translate-y-1"
+            >
+              <header class="flex justify-between items-start mb-4">
+                <figure class="flex items-center gap-3 m-0">
+                  <img
+                    src="/api/placeholder/80/80"
+                    alt="Foto de Roberto M."
+                    class="w-12 h-12 rounded-full object-cover border-2 border-[#4a90e2] dark:border-[#6eb5ff]"
+                  />
+                  <figcaption class="font-bold">Roberto M.</figcaption>
+                </figure>
+                <span class="text-yellow-400 text-lg">★★★★☆</span>
+              </header>
+              <p class="text-[#4a90e2] dark:text-[#6eb5ff] font-medium my-2">
+                Vela de Sándalo
+              </p>
+              <blockquote
+                class="border-l-4 border-[#4a90e2] dark:border-[#6eb5ff] pl-4 my-4 italic"
+              >
+                <p>
+                  El aroma a sándalo es sofisticado y relajante. Crea un
+                  ambiente perfecto para meditar. El único detalle es que
+                  esperaba que durara un poco más.
+                </p>
+              </blockquote>
+              <footer>
+                <time
+                  datetime="2024-12-03"
+                  class="text-right text-sm text-gray-600 dark:text-gray-400 block mt-4"
+                  >3 de diciembre, 2024</time
+                >
+              </footer>
+            </article>
+          </section>
+        </main>
 
-          <fieldset class="border border-[#4a90e2] dark:border-[#6eb5ff] rounded p-4 mb-6">
-            <legend class="text-[#4a90e2] dark:text-[#6eb5ff] font-bold px-2">Temporada</legend>
-            <label class="block my-2 cursor-pointer">
-              <input type="checkbox" name="temporada" value="primavera" checked class="mr-2"> Primavera
-            </label>
-            <label class="block my-2 cursor-pointer">
-              <input type="checkbox" name="temporada" value="verano" class="mr-2"> Verano
-            </label>
-            <label class="block my-2 cursor-pointer">
-              <input type="checkbox" name="temporada" value="otono" class="mr-2"> Otoño
-            </label>
-            <label class="block my-2 cursor-pointer">
-              <input type="checkbox" name="temporada" value="invierno" class="mr-2"> Invierno
-            </label>
-          </fieldset>
+        <!-- Barra lateral de filtros - CORREGIDO: movida a la izquierda usando flexbox -->
+        <aside
+          class="w-full md:w-1/4 flex-shrink-0 bg-[#C1AA92] dark:bg-[#333] rounded-lg p-6 shadow-md h-fit md:order-1"
+        >
+          <h2
+            class="text-[#4a90e2] dark:text-[#6eb5ff] text-lg font-semibold mb-6"
+          >
+            Filtros
+          </h2>
+          <form aria-label="Filtros de testimonios">
+            <fieldset
+              class="border border-[#4a90e2] dark:border-[#6eb5ff] rounded p-4 mb-6"
+            >
+              <legend class="text-[#4a90e2] dark:text-[#6eb5ff] font-bold px-2">
+                Valoración
+              </legend>
+              <label class="block my-2 cursor-pointer">
+                <input
+                  type="checkbox"
+                  name="rating"
+                  value="5"
+                  checked
+                  class="mr-2"
+                />
+                5 estrellas
+              </label>
+              <label class="block my-2 cursor-pointer">
+                <input
+                  type="checkbox"
+                  name="rating"
+                  value="4"
+                  checked
+                  class="mr-2"
+                />
+                4 estrellas
+              </label>
+              <label class="block my-2 cursor-pointer">
+                <input type="checkbox" name="rating" value="3" class="mr-2" /> 3
+                estrellas
+              </label>
+              <label class="block my-2 cursor-pointer">
+                <input type="checkbox" name="rating" value="2" class="mr-2" /> 2
+                estrellas
+              </label>
+              <label class="block my-2 cursor-pointer">
+                <input type="checkbox" name="rating" value="1" class="mr-2" /> 1
+                estrella
+              </label>
+            </fieldset>
 
-          <button type="button" class="w-full bg-[#4a90e2] dark:bg-[#6eb5ff] hover:bg-[#357abd] dark:hover:bg-[#8ac4ff] text-white font-bold py-3 px-4 rounded transition-colors">Aplicar filtros</button>
-        </form>
-      </aside>
-    </section>
-  </main>
+            <fieldset
+              class="border border-[#4a90e2] dark:border-[#6eb5ff] rounded p-4 mb-6"
+            >
+              <legend class="text-[#4a90e2] dark:text-[#6eb5ff] font-bold px-2">
+                Productos
+              </legend>
+              <label class="block my-2 cursor-pointer">
+                <input
+                  type="checkbox"
+                  name="producto"
+                  value="vela-lavanda"
+                  checked
+                  class="mr-2"
+                />
+                Vela de Lavanda
+              </label>
+              <label class="block my-2 cursor-pointer">
+                <input
+                  type="checkbox"
+                  name="producto"
+                  value="vela-vainilla"
+                  checked
+                  class="mr-2"
+                />
+                Vela de Vainilla
+              </label>
+              <label class="block my-2 cursor-pointer">
+                <input
+                  type="checkbox"
+                  name="producto"
+                  value="coleccion-citrica"
+                  class="mr-2"
+                />
+                Colección Cítrica
+              </label>
+              <label class="block my-2 cursor-pointer">
+                <input
+                  type="checkbox"
+                  name="producto"
+                  value="vela-canela"
+                  class="mr-2"
+                />
+                Vela de Canela
+              </label>
+              <label class="block my-2 cursor-pointer">
+                <input
+                  type="checkbox"
+                  name="producto"
+                  value="vela-jazmin"
+                  class="mr-2"
+                />
+                Vela de Jazmín
+              </label>
+              <label class="block my-2 cursor-pointer">
+                <input
+                  type="checkbox"
+                  name="producto"
+                  value="vela-sandalo"
+                  class="mr-2"
+                />
+                Vela de Sándalo
+              </label>
+            </fieldset>
 
-  <!-- Código JavaScript -->
-  <script>
-    const themeToggle = document.getElementById('theme-toggle');
-    const html = document.documentElement;
+            <fieldset
+              class="border border-[#4a90e2] dark:border-[#6eb5ff] rounded p-4 mb-6"
+            >
+              <legend class="text-[#4a90e2] dark:text-[#6eb5ff] font-bold px-2">
+                Temporada
+              </legend>
+              <label class="block my-2 cursor-pointer">
+                <input
+                  type="checkbox"
+                  name="temporada"
+                  value="primavera"
+                  checked
+                  class="mr-2"
+                />
+                Primavera
+              </label>
+              <label class="block my-2 cursor-pointer">
+                <input
+                  type="checkbox"
+                  name="temporada"
+                  value="verano"
+                  class="mr-2"
+                />
+                Verano
+              </label>
+              <label class="block my-2 cursor-pointer">
+                <input
+                  type="checkbox"
+                  name="temporada"
+                  value="otono"
+                  class="mr-2"
+                />
+                Otoño
+              </label>
+              <label class="block my-2 cursor-pointer">
+                <input
+                  type="checkbox"
+                  name="temporada"
+                  value="invierno"
+                  class="mr-2"
+                />
+                Invierno
+              </label>
+            </fieldset>
 
-    themeToggle.addEventListener('click', () => {
-      html.classList.toggle('dark');
+            <button
+              type="button"
+              class="w-full bg-[#4a90e2] dark:bg-[#6eb5ff] hover:bg-[#357abd] dark:hover:bg-[#8ac4ff] text-white font-bold py-3 px-4 rounded transition-colors"
+            >
+              Aplicar filtros
+            </button>
+          </form>
+        </aside>
+      </section>
+    </main>
 
-      if (html.classList.contains('dark')) {
-        themeToggle.textContent = '☀️';
-        localStorage.setItem('theme', 'dark');
+    <!-- Código JavaScript -->
+    <script>
+      const themeToggle = document.getElementById("theme-toggle");
+      const html = document.documentElement;
+
+      themeToggle.addEventListener("click", () => {
+        html.classList.toggle("dark");
+
+        if (html.classList.contains("dark")) {
+          themeToggle.textContent = "☀️";
+          localStorage.setItem("theme", "dark");
+        } else {
+          themeToggle.textContent = "🌙";
+          localStorage.setItem("theme", "light");
+        }
+      });
+
+      // Mantener la preferencia del usuario
+      if (localStorage.getItem("theme") === "dark") {
+        html.classList.add("dark");
+        themeToggle.textContent = "☀️";
       } else {
-        themeToggle.textContent = '🌙';
-        localStorage.setItem('theme', 'light');
+        html.classList.add("light");
       }
-    });
-
-    // Mantener la preferencia del usuario
-    if (localStorage.getItem('theme') === 'dark') {
-      html.classList.add('dark');
-      themeToggle.textContent = '☀️';
-    } else {
-      html.classList.add('light');
-    }
-  </script>
-</body>
+    </script>
+  </body>
 </html>
